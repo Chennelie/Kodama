@@ -1,0 +1,237 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    flex-wrap: wrap;
+    background-color: #263641;
+}
+
+#kodama1, #kodama2 {
+    position: relative;
+}
+
+#kodama1 {
+    margin-right: 30px;
+}
+
+#kodama2 {
+    display: flex;
+    bottom: 71px;
+    flex-direction: column;
+}
+
+#kodama1-head {
+    width: 110px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    animation: movingHead 2s infinite;
+    border: 2px solid #263641;
+    z-index: 2;
+    position: relative; 
+}
+
+#kodama2-head {
+    width: 100px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    animation: movingHead 1s infinite;
+    animation-delay: 1s;
+    border: 2px solid #263641;
+    z-index: 2;
+}
+
+@keyframes movingHead {
+    0% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#kodama1 .eye {
+    width: 25px;
+    border-radius: 50%;
+    height: 25px;
+    background-color: #263641;
+    position: relative;
+}
+
+#kodama1 #left-eye {
+    top: 20px;
+    left: 15px;
+}
+
+#kodama1 #right-eye {
+    left: 71px;
+}
+
+#kodama2 .eye {
+    border-radius: 50%;
+    background-color: #263641;
+    position: relative;
+}
+
+#kodama2 #left-eye {
+    height: 30px;
+    width: 30px;
+    top: 20px;
+    left: 15px;
+}
+
+#kodama2 #right-eye {
+    left: 67px;
+    top: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+#kodama1 #mouth {
+    width: 10px;
+    border-radius: 50%;
+    height: 10px;
+    background-color: #263641;
+    top: 26px;
+    position: relative;
+    left: 41px;
+}
+
+#kodama2 #mouth {
+    width: 15px;
+    border-radius: 50%;
+    height: 15px;
+    background-color: #263641;
+    top: 26px;
+    position: relative;
+    left: 41px;
+}
+
+#kodama1-body {
+    width: 110px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    position: relative;
+    top: -10px;
+}
+
+#kodama2-body {
+    width: 100px;
+    height: 130px;
+    border-radius: 37%;
+    background-color: #FFFFFF;
+    position: relative;
+    top: -10px;
+}
+
+#kodama1 #upper-arms {
+    background-color: #FFFFFF;
+    width: 95px;
+    height: 24px;
+    top: 29px;
+    z-index: 1;
+    position: absolute;
+    left: 8px;
+}
+
+#kodama1 .arm {
+    background-color: #FFFFFF;
+    border: 2px solid #263641;
+    width: 20px;
+    height: 80px;
+    position: relative;
+    border-radius: 0px 0px 30px 30px;
+}
+
+#kodama1 #left-arm {
+    top: 30px;
+    left: -5px;
+    transform: rotate(15deg);
+}
+
+#kodama1 #right-arm {
+    top: -53px;
+    left: 92px;
+    transform: rotate(-15deg);
+}
+
+#kodama1 .leg {
+    border: 2px solid #263641;
+    background-color: #FFFFFF;
+    width: 30px;
+    height: 80px;
+    position: relative;
+    z-index: 2;
+    border-radius: 30px 30px 30px 30px;
+}
+
+#kodama1 #left-leg {
+    top: -122px;
+    left: 20px;
+}
+
+#kodama1 #right-leg {
+    top: -206px;
+    left: 57px;
+}
+
+#kodama2 #upper-arms {
+    background-color: #FFFFFF;
+    width: 95px;
+    height: 24px;
+    top: 30px;
+    z-index: 1;
+    position: absolute;
+    left: 3px;
+}
+
+#kodama2 .arm {
+    background-color: #FFFFFF;
+    border: 2px solid #263641;
+    width: 20px;
+    height: 80px;
+    position: relative;
+    border-radius: 0px 0px 30px 30px;
+}
+
+#kodama2 #left-arm {
+    top: 31px;
+    left: -6px;
+    transform: rotate(10deg);
+}
+
+#kodama2 #right-arm {
+    top: -53px;
+    left: 83px;
+    transform: rotate(-10deg);
+}
+
+#kodama2 .leg {
+    background-color: #FFFFFF;
+    width: 30px;
+    height: 80px;
+    position: relative;
+    border-radius: 0px 0px 30px 30px;
+}
+
+#kodama2 #left-leg {
+    top: -52px;
+    left: 17px;
+}
+
+#kodama2 #right-leg {
+    top: -132px;
+    left: 58px;
+}
